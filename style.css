@@ -1,0 +1,158 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --background-color: #25283D;
+    --text-color-1: #FFF4E0;
+    --text-color-2: #d0ecb6;
+}
+body {
+    /*background: linear-gradient(#134E5E, #71B280);*/
+    background: url(img/background.jpg) no-repeat bottom  fixed; 
+}
+header {
+    border-bottom: 2px solid var(--text-color-2);
+    margin: 1.2;
+}
+
+#photo {
+    float: left;
+    position: relative;
+    width: 3rem;
+    bottom: 0.2rem;
+    margin-left: 2.2rem;
+}
+
+header ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-top: 1.2rem;
+    margin-right: 2.2rem;
+
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color-2);
+    font-weight: bolder;
+    transition: 300ms;
+}
+
+a:hover{
+    font-size: 1.1rem;
+    color: var(--text-color-1)
+}
+
+li {
+    list-style: none;
+    margin: 0 1.2rem 1.2rem 0;
+}
+
+.container {
+    text-align: center;
+    padding: 2rem;
+    color: var(--text-color-1)
+
+}
+
+.container h1 {
+    font-size: 2.4rem;
+    margin: 2.2rem;
+}
+
+.container h5 {
+    font-size: 1.5rem;
+    margin-bottom: 2.2rem;
+    color: var(--text-color-2);
+}
+
+.rotate {
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+#arrow {
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin-bottom: 2.2rem;
+    animation: blink 1s steps(5, start) infinite;
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+.active {
+    display: block !important;
+}
+
+#about p {
+    max-width: 37.5rem;
+    font-size: 0.9rem;
+    margin: 2.2rem auto;
+    color: var(--text-color-1);
+
+}
+
+.form {
+    margin: 0 auto;
+    width: 60%;
+}
+
+.form input {
+    width: 40%;
+    height: 2rem;
+    margin: 0 auto;
+    border: none;
+    border: 1px solid whitesmoke;
+    border-radius: 5px 0 0 5px;
+}
+
+.form button {
+    width: 15%;
+    height: 2rem;
+    margin-left: -0.3rem ;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    cursor: pointer;
+    border-radius: 0 5px 5px 0px;
+}
+
+@media only screen and (max-width:480px) {
+    .container h1 {
+        font-size: 1.8rem;
+    }
+    
+    .container h5 {
+        font-size: 1.2rem;
+    }
+
+    #about p {
+        text-align: justify;
+    }
+    
+    .form {
+        margin: 0 auto;
+        width: 100%;
+    }
+    
+    .form input {
+        width: 60%;
+        height: 2rem;
+        margin: 0 auto;
+
+    }
+
+    .form button {
+        width: 30%;
+        height: 2rem;
+        margin-left: -0.3rem;
+    }
+}
