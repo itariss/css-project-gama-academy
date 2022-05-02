@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <script
+            src="https://kit.fontawesome.com/379118b5c6.js"
+            crossorigin="anonymous"
+        ></script>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+            rel="stylesheet"
+        />
+        <title>Italo Rissardi</title>
+    </head>
+    <body>
+        <header>
+            <div class="img">
+                <img id="photo" src="img/logo2.png" />
+            </div>
+            <ul>
+                <li>
+                    <a target="_blank" href="https://github.com/itariss"
+                        >Git Hub</a
+                    >
+                </li>
+                <li>
+                    <a target="_blank" href="mailto:italorissardi@gmail.com"
+                        >Email</a
+                    >
+                </li>
+                <li>
+                    <a target="_blank" href="https://wa.me/+5519983005193"
+                        >Whatsapp</a
+                    >
+                </li>
+            </ul>
+        </header>
+        <main>
+            <section class="container">
+                <div class="name">
+                    <h1>Ítalo Rissardi</h1>
+                    <h5>Web Developer</h5>
+                </div>
+                <div onclick="displayAbout()" id="arrow">
+                    <i id="animation" class="fas fa-sort-down"></i>
+                </div>
+                <div style="display: none" id="about">
+                    <p>
+                        Sou natural de São Paulo tenho 29 anos e hoje moro em
+                        Aracaju. Músico e apaixonado por tecnologia, atualmente
+                        estou me formando como Desenvolvedor Web. Além de
+                        programação e música, sou muito fã de quadrinhos,
+                        lieteratura e animações.
+                    </p>
+                </div>
+                <div class="form">
+                    <form action="">
+                        <input
+                            type="email"
+                            placeholder="digite seu melhor email"
+                        />
+                        <button class="submit">Enviar</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <script>
+            function displayAbout() {
+                var arrow = document.querySelector("#animation");
+                arrow.classList.toggle("rotate");
+                var display = document.querySelector("#about");
+                display.classList.toggle("active");
+            }
+        </script>
+    </body>
+</html>
